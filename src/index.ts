@@ -7,110 +7,110 @@ const urlEconomia = {
 	economia: [
 		{
 			url: "https://elcomercio.pe/arc/outboundfeeds/rss/category/economia/?outputType=xml",
-			brand: "elcomercio"
+			brand: "elcomercio",
 		},
-        {
+		{
 			url: "https://gestion.pe/arcio/rss/category/economia/empresas/",
-			brand: "gestion"
+			brand: "gestion",
 		},
 		{
 			url: "https://gestion.pe/arcio/rss/category/economia/mercados/",
-			brand: "gestion"
+			brand: "gestion",
 		},
 		{
 			url: "https://gestion.pe/arcio/rss/category/economia/management-empleo/",
-			brand: "gestion"
+			brand: "gestion",
 		},
 		{
 			url: "https://elcomercio.pe/arcio/rss/category/economia/negocios/",
-			brand: "elcomercio"
+			brand: "elcomercio",
 		},
 		{
 			url: "https://elcomercio.pe/arcio/rss/category/economia/ejecutivos/",
-			brand: "elcomercio"
+			brand: "elcomercio",
 		},
 		{
 			url: "https://elcomercio.pe/arcio/rss/category/economia/mercados/",
-			brand: "elcomercio"
+			brand: "elcomercio",
 		},
 		{
 			url: "https://elcomercio.pe/arcio/rss/category/economia/opinion/",
-			brand: "elcomercio"
+			brand: "elcomercio",
 		},
 		{
 			url: "https://elcomercio.pe/arcio/rss/category/economia/personal/",
-			brand: "elcomercio"
+			brand: "elcomercio",
 		},
 		{
 			url: "https://elcomercio.pe/arcio/rss/category/economia/mundo/",
-			brand: "elcomercio"
+			brand: "elcomercio",
 		},
 		{
 			url: "https://elcomercio.pe/arcio/rss/category/economia/peru/",
-			brand: "elcomercio"
+			brand: "elcomercio",
 		},
 		{
 			url: "https://elcomercio.pe/arcio/rss/category/economia/dia-1/",
-			brand: "elcomercio"
+			brand: "elcomercio",
 		},
 		{
 			url: "https://elcomercio.pe/arcio/rss/category/economia/lec/",
-			brand: "elcomercio"
-		}
-	]
-}
+			brand: "elcomercio",
+		},
+	],
+};
 const urlPolitica = {
-    politica : [
-        {
-            url:"https://gestion.pe/arcio/rss/category/videos/politica/",
-            brand : "gestion"
-        },
+	politica: [
 		{
-			url:"https://gestion.pe/arcio/rss/category/peru/politica/",
-			brand : "gestion"
+			url: "https://gestion.pe/arcio/rss/category/videos/politica/",
+			brand: "gestion",
 		},
 		{
-			url:"https://elcomercio.pe/arc/outboundfeeds/rss/category/politica/?outputType=xml",
-			brand : "elcomercio"
+			url: "https://gestion.pe/arcio/rss/category/peru/politica/",
+			brand: "gestion",
 		},
 		{
-			url:"https://elcomercio.pe/arcio/rss/category/politica/actualidad/",
-			brand : "elcomercio"
+			url: "https://elcomercio.pe/arc/outboundfeeds/rss/category/politica/?outputType=xml",
+			brand: "elcomercio",
 		},
 		{
-			url:"https://elcomercio.pe/arcio/rss/category/politica/elecciones/",
-			brand : "elcomercio"
+			url: "https://elcomercio.pe/arcio/rss/category/politica/actualidad/",
+			brand: "elcomercio",
 		},
 		{
-			url:"https://elcomercio.pe/arcio/rss/category/politica/justicia/",
-			brand : "elcomercio"
+			url: "https://elcomercio.pe/arcio/rss/category/politica/elecciones/",
+			brand: "elcomercio",
 		},
 		{
-			url:"https://elcomercio.pe/arcio/rss/category/politica/partidos/",
-			brand : "elcomercio"
+			url: "https://elcomercio.pe/arcio/rss/category/politica/justicia/",
+			brand: "elcomercio",
 		},
 		{
-			url:"https://elcomercio.pe/arcio/rss/category/politica/congreso/",
-			brand : "elcomercio"
+			url: "https://elcomercio.pe/arcio/rss/category/politica/partidos/",
+			brand: "elcomercio",
 		},
 		{
-			url:"https://elcomercio.pe/arcio/rss/category/politica/gobierno/",
-			brand : "elcomercio"
+			url: "https://elcomercio.pe/arcio/rss/category/politica/congreso/",
+			brand: "elcomercio",
 		},
 		{
-			url:"https://elcomercio.pe/arcio/rss/category/politica/internacional/",
-			brand : "elcomercio"
+			url: "https://elcomercio.pe/arcio/rss/category/politica/gobierno/",
+			brand: "elcomercio",
 		},
 		{
-			url:"https://elcomercio.pe/arcio/rss/category/politica/opinion/",
-			brand : "elcomercio"
+			url: "https://elcomercio.pe/arcio/rss/category/politica/internacional/",
+			brand: "elcomercio",
 		},
 		{
-			url:"https://elcomercio.pe/arcio/rss/category/politica/polemica",
-			brand : "elcomercio"
-		}
-    ]
-}
+			url: "https://elcomercio.pe/arcio/rss/category/politica/opinion/",
+			brand: "elcomercio",
+		},
+		{
+			url: "https://elcomercio.pe/arcio/rss/category/politica/polemica",
+			brand: "elcomercio",
+		},
+	],
+};
 
 // 	mundo : [
 // 		{
@@ -373,16 +373,23 @@ async function crons(url: { [key: string]: { url: string; brand: string }[] }) {
 	}
 }
 
+async function cronMapper(name:string, url: { [key: string]: { url: string; brand: string }[] }) {
+	return cron({
+		name,
+		pattern: Patterns.everyMinutes(30),
+		async run() {
+			await crons(url);
+		},
+	});
+}
 const app = new Elysia()
-	.use(
-		cron({
-			name: "economia",
-			pattern: Patterns.everyMinutes(30),
-			async run() {
-				await crons(urlEconomia);
-			},
-		}),
-	)
+	.use( cronMapper('economia', urlEconomia))
+	.use( cronMapper('politica', urlPolitica))
+	.use( cronMapper('economia', urlEconomia))
+	.use( cronMapper('economia', urlEconomia))
+	.use( cronMapper('economia', urlEconomia))
+	.use( cronMapper('economia', urlEconomia))
+
 	.listen(3000);
 
 // console.log(
