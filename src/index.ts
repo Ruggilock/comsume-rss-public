@@ -1,7 +1,6 @@
 import { Elysia } from "elysia";
-import { cron } from "@elysiajs/cron";
-import { parseComercio } from "./rss/comercio.parse";
-import { parseGestion } from "./rss/gestion.parse";
+import { Patterns, cron } from "@elysiajs/cron";
+import { parse } from "./rss/parse";
 
 const url = {
 	economia: [
@@ -359,16 +358,11 @@ const url = {
 };
 
 async function crons() {
+	let items = [];
 	for (const key in url) {
 		for (const item of url[key as keyof typeof url]) {
-			if (item.brand === "elcomercio") {
-				const feed = JSON.stringify(await parseComercio(item.url, key));
-				console.log(feed);
-			}
-			else if (item.brand === "gestion") {
-				const feed = JSON.stringify(await parseGestion(item.url,key));
-				console.log(feed);
-			}
+			items = await parse(item.url, key, item.brand);
+			// await saveItems(items);
 		}
 	}
 }
