@@ -1,7 +1,7 @@
 import { Elysia } from "elysia";
 import { Patterns, cron } from "@elysiajs/cron";
 import { parse } from "./rss/parse";
-import { run, saveItems } from "./db/store";
+import { saveItems } from "./db/store";
 
 const urlEconomia = {
 	economia: [
@@ -377,7 +377,7 @@ async function crons(url: { [key: string]: { url: string; brand: string }[] }) {
 	let items = [];
 	for (const key in url) {
 		for (const item of url[key as keyof typeof url]) {
-			console.log(`Parsing ${key} ${item.brand}...`)
+			console.log(`Parsing ${key} ${item.brand}...`);
 			items = await parse(item.url, key, item.brand);
 			await saveItems(items);
 		}
@@ -406,15 +406,30 @@ const app = new Elysia()
 	.use(cronMapper("tecnologia", urlTecnologia))
 	.use(cronMapper("deporte", urlDeporte))
 	.use(cronMapper("gastronomia", urlGastronomia))
-	.get("/getEconomia", async () => {await crons(urlEconomia)})
-	.get("/getPolítica", async () => {await crons(urlPolitica)})
-	.get("/getMundo", async () => {await crons(urlMundo)})
-	.get("/getBienestar", async () => {await crons(urlBienestar)})
-	.get("/getTendencias", async () => {await crons(urlTendencias)})
-	.get("/getTecnología", async () => {await crons(urlTecnologia)})
-	.get("/getDeporte", async () => {await crons(urlDeporte)})
-	.get("/getGastronomia", async () => {await crons(urlGastronomia)})
-	.get("/db", async () => await run())
+	.get("/getEconomia", async () => {
+		await crons(urlEconomia);
+	})
+	.get("/getPolítica", async () => {
+		await crons(urlPolitica);
+	})
+	.get("/getMundo", async () => {
+		await crons(urlMundo);
+	})
+	.get("/getBienestar", async () => {
+		await crons(urlBienestar);
+	})
+	.get("/getTendencias", async () => {
+		await crons(urlTendencias);
+	})
+	.get("/getTecnología", async () => {
+		await crons(urlTecnologia);
+	})
+	.get("/getDeporte", async () => {
+		await crons(urlDeporte);
+	})
+	.get("/getGastronomia", async () => {
+		await crons(urlGastronomia);
+	})
 	.listen(3000);
 
 console.log(
