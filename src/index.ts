@@ -385,13 +385,13 @@ async function cronMapper(name:string, url: { [key: string]: { url: string; bran
 const app = new Elysia()
 	.use( cronMapper('economia', urlEconomia))
 	.use( cronMapper('politica', urlPolitica))
-	.use( cronMapper('economia', urlEconomia))
-	.use( cronMapper('economia', urlEconomia))
-	.use( cronMapper('economia', urlEconomia))
-	.use( cronMapper('economia', urlEconomia))
+	// .use( cronMapper('economia', urlEconomia))
+	// .use( cronMapper('economia', urlEconomia))
+	// .use( cronMapper('economia', urlEconomia))
+	// .use( cronMapper('economia', urlEconomia))
 
 	.listen(3000);
 
-// console.log(
-//   `🦊 Elysia is running at ${app.server?.hostname}:${app.server?.port}`
-// );
+console.log(
+  `🦊 Elysia is running at ${app.server?.hostname}:${app.server?.port}`
+);
