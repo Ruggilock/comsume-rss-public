@@ -409,7 +409,7 @@ const app = new Elysia()
 	.get("/getEconomia", async () => {
 		await crons(urlEconomia);
 	})
-	.get("/getPolítica", async () => {
+	.get("/getPolitica", async () => {
 		await crons(urlPolitica);
 	})
 	.get("/getMundo", async () => {
@@ -421,7 +421,7 @@ const app = new Elysia()
 	.get("/getTendencias", async () => {
 		await crons(urlTendencias);
 	})
-	.get("/getTecnología", async () => {
+	.get("/getTecnologia", async () => {
 		await crons(urlTecnologia);
 	})
 	.get("/getDeporte", async () => {
