@@ -1,7 +1,7 @@
 import { Elysia } from "elysia";
 import { Patterns, cron } from "@elysiajs/cron";
 import { parse } from "./rss/parse";
-import { saveItems } from "./db/store";
+import { run, saveItems } from "./db/store";
 
 const urlEconomia = {
 	economia: [
@@ -406,14 +406,15 @@ const app = new Elysia()
 	.use(cronMapper("tecnologia", urlTecnologia))
 	.use(cronMapper("deporte", urlDeporte))
 	.use(cronMapper("gastronomia", urlGastronomia))
-	.get("/getEconomía", async () => {await crons(urlEconomia)})
+	.get("/getEconomia", async () => {await crons(urlEconomia)})
 	.get("/getPolítica", async () => {await crons(urlPolitica)})
 	.get("/getMundo", async () => {await crons(urlMundo)})
 	.get("/getBienestar", async () => {await crons(urlBienestar)})
 	.get("/getTendencias", async () => {await crons(urlTendencias)})
 	.get("/getTecnología", async () => {await crons(urlTecnologia)})
 	.get("/getDeporte", async () => {await crons(urlDeporte)})
-	.get("/getGastronomía", async () => {await crons(urlGastronomia)})
+	.get("/getGastronomia", async () => {await crons(urlGastronomia)})
+	.get("/db", async () => await run())
 	.listen(3000);
 
 console.log(
