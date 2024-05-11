@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 import type { Item } from "../interface/feed";
 
 const conn = mongoose.createConnection(
-	"mongodb+srv://news.cnpse87.mongodb.net/news?authSource=%24external&authMechanism=MONGODB-X509&retryWrites=true&w=majority&appName=news",
+	Bun.env.MONGO_URL ?? "mongodb://localhost:27017/rss",
 	{
 		serverApi: { version: "1", strict: true, deprecationErrors: true },
 		tlsCertificateKeyFile: "rootCA.pem",
@@ -31,11 +31,10 @@ export async function saveItem(item: Item) {
 	const newItem = new ItemDb(item);
 	const itemSave = await newItem.save();
 
-	console.log(itemSave);
+	console.log(`Item saved: ${itemSave.title} date: ${itemSave.isoDate}`);
 }
 
 export async function saveItems(items: Item[]) {
-
 	for (const item of items) {
 		await saveItem(item);
 	}
