@@ -392,9 +392,11 @@ const app = new Elysia()
 	// .use( cronMapper('economia', urlEconomia))
 	// .use( cronMapper('economia', urlEconomia))
 	// .use( cronMapper('economia', urlEconomia))
-	.get('/', async () => {
+	.get('/getNews', async () => {
 		await cronMapper('economia', urlEconomia)
 		await cronMapper('politica', urlPolitica)
+		console.log("Running economia politica");
+		return { message: "running economia politica" };
 	})
 	.listen(3000);
 
