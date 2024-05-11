@@ -111,269 +111,283 @@ const urlPolitica = {
 		},
 	],
 };
-
-// 	mundo : [
-// 		{
-// 			url: "https://gestion.pe/arcio/rss/category/mundo/estados-unidos/",
-// 			brand: "gestion"
-// 		},
-// 		{
-// 			url: "https://gestion.pe/arcio/rss/category/mundo/espana/",
-// 			brand: "gestion"
-// 		},
-// 		{
-// 			url: "https://gestion.pe/arcio/rss/category/mundo/mexico/",
-// 			brand: "gestion"
-// 		},
-// 		{
-// 			url: "https://gestion.pe/arcio/rss/category/mundo/internacional/",
-// 			brand: "gestion"
-// 		},
-// 		{
-// 			url: "https://elcomercio.pe/arc/outboundfeeds/rss/category/mundo/?outputType=xml",
-// 			brand: "elcomercio"
-// 		},
-// 		{
-// 			url: "https://elcomercio.pe/arcio/rss/category/mundo/asia/",
-// 			brand: "elcomercio"
-// 		},
-// 		{
-// 			url: "https://elcomercio.pe/arcio/rss/category/mundo/desastres/",
-// 			brand: "elcomercio"
-// 		},
-// 		{
-// 			url: "https://elcomercio.pe/arcio/rss/category/mundo/eeuu/",
-// 			brand: "elcomercio"
-// 		},
-// 		{
-// 			url: "https://elcomercio.pe/arcio/rss/category/mundo/escandalos/",
-// 			brand: "elcomercio"
-// 		},
-// 		{
-// 			url: "https://elcomercio.pe/arcio/rss/category/mundo/europa/",
-// 			brand: "elcomercio"
-// 		},
-// 		{
-// 			url: "https://elcomercio.pe/arcio/rss/category/mundo/latinoamerica/",
-// 			brand: "elcomercio"
-// 		},
-// 		{
-// 			url: "https://elcomercio.pe/arcio/rss/category/mundo/mexico/",
-// 			brand: "elcomercio"
-// 		},
-// 		{
-// 			url: "https://elcomercio.pe/arcio/rss/category/mundo/norteamerica/",
-// 			brand: "elcomercio"
-// 		},
-// 		{
-// 			url: "https://elcomercio.pe/arcio/rss/category/mundo/onu/",
-// 			brand: "elcomercio"
-// 		},
-// 		{
-// 			url: "https://elcomercio.pe/arcio/rss/category/mundo/perfil/",
-// 			brand: "elcomercio"
-// 		},
-// 		{
-// 			url: "https://elcomercio.pe/arcio/rss/category/mundo/tragedia/",
-// 			brand: "elcomercio"
-// 		},
-// 		{
-// 			url: "https://elcomercio.pe/arcio/rss/category/mundo/africa/",
-// 			brand: "elcomercio"
-// 		},
-// 		{
-// 			url: "https://elcomercio.pe/arcio/rss/category/mundo/armamentismo/",
-// 			brand: "elcomercio"
-// 		},
-// 		{
-// 			url: "https://elcomercio.pe/arcio/rss/category/mundo/diplomacia/",
-// 			brand: "elcomercio"
-// 		},
-// 		{
-// 			url: "https://elcomercio.pe/arcio/rss/category/mundo/elecciones/",
-// 			brand: "elcomercio"
-// 		},
-// 		{
-// 			url: "https://elcomercio.pe/arcio/rss/category/mundo/espana/",
-// 			brand: "elcomercio"
-// 		},
-// 		{
-// 			url: "https://elcomercio.pe/arcio/rss/category/mundo/justicia/",
-// 			brand: "elcomercio"
-// 		},
-// 		{
-// 			url: "https://elcomercio.pe/arcio/rss/category/mundo/medio-ambiente/",
-// 			brand: "elcomercio"
-// 		},
-// 		{
-// 			url: "https://elcomercio.pe/arcio/rss/category/mundo/narcotrafico/",
-// 			brand: "elcomercio"
-// 		},
-// 		{
-// 			url: "https://elcomercio.pe/arcio/rss/category/mundo/narcotrafico/",
-// 			brand: "elcomercio"
-// 		},
-// 		{
-// 			url: "https://elcomercio.pe/arcio/rss/category/mundo/oea/",
-// 			brand: "elcomercio"
-// 		},
-// 		{
-// 			url: "https://elcomercio.pe/arcio/rss/category/mundo/oriente-medio/",
-// 			brand: "elcomercio"
-// 		},
-// 		{
-// 			url: "https://elcomercio.pe/arcio/rss/category/mundo/terrorismo/",
-// 			brand: "elcomercio"
-// 		},
-// 		{
-// 			url: "https://elcomercio.pe/arcio/rss/category/mundo/venezuela/",
-// 			brand: "elcomercio"
-// 		},
-// 		{
-// 			url: "https://elcomercio.pe/arcio/rss/category/mundo/centroamerica/",
-// 			brand: "elcomercio"
-// 		}
-// 	],
-// 	bienestar : [
-// 		{
-// 			url:"https://elcomercio.pe/arcio/rss/category/bienestar/alimentacion/",
-// 			brand : "elcomercio"
-// 		},
-// 		{
-// 			url:"https://elcomercio.pe/arcio/rss/category/artlima/espiritualidad/",
-// 			brand : "elcomercio"
-// 		},
-// 		{
-// 			url:"https://elcomercio.pe/arcio/rss/category/artlima/salud-fisica/",
-// 			brand : "elcomercio"
-// 		},
-// 		{
-// 			url:"https://elcomercio.pe/arcio/rss/category/artlima/crecimiento-personal/",
-// 			brand : "elcomercio"
-// 		},
-// 		{
-// 			url:"https://elcomercio.pe/arcio/rss/category/artlima/mente-sana/",
-// 			brand : "elcomercio"
-// 		}
-// 	],
-// 	tendencias : [
-// 		{
-// 			url:"https://gestion.pe/arcio/rss/category/tendencias/estilos/",
-// 			brand : "gestion"
-// 		},
-// 		{
-// 			url:"https://gestion.pe/arcio/rss/category/tendencias/lujos/",
-// 			brand : "gestion"
-// 		},
-// 		{
-// 			url:"https://gestion.pe/arcio/rss/category/tendencias/moda/",
-// 			brand : "gestion"
-// 		},
-// 		{
-// 			url:"https://gestion.pe/arcio/rss/category/tendencias/viajes/",
-// 			brand : "gestion"
-// 		}
-// 	],
-// 	tecnologia : [
-// 		{
-// 			url:"https://gestion.pe/arc/outboundfeeds/rss/category/tecnologia/?outputType=xml",
-// 			brand : "gestion"
-// 		},
-// 		{
-// 			url:"https://elcomercio.pe/arcio/rss/category/tecnologia/gadgets/",
-// 			brand : "elcomercio"
-// 		},
-// 		{
-// 			url:"https://elcomercio.pe/arcio/rss/category/tecnologia/redes-sociales/",
-// 			brand : "elcomercio"
-// 		},
-// 		{
-// 			url:"https://elcomercio.pe/arcio/rss/category/tecnologia/robotica/",
-// 			brand : "elcomercio"
-// 		},
-// 		{
-// 			url:"https://elcomercio.pe/arcio/rss/category/tecnologia/",
-// 			brand : "elcomercio"
-// 		},
-// 		{
-// 			url:"https://elcomercio.pe/arcio/rss/category/tecnologia/videojuegos/",
-// 			brand : "elcomercio"
-// 		},
-// 		{
-// 			url:"https://elcomercio.pe/arcio/rss/category/tecnologia/streamers/",
-// 			brand : "elcomercio"
-// 		}
-// 	],
-// 	deporte : [
-// 		{
-// 			url:"https://gestion.pe/arcio/rss/category/mix/sports/",
-// 			brand : "gestion"
-// 		},
-// 		{
-// 			url:"https://elcomercio.pe/arcio/rss/category/trivias/deporte-total/",
-// 			brand : "elcomercio"
-// 		},
-// 		{
-// 			url:"https://elcomercio.pe/arcio/rss/category/videos/deportes/",
-// 			brand : "elcomercio"
-// 		},
-// 		{
-// 			url:"https://elcomercio.pe/arc/outboundfeeds/rss/category/deporte-total/?outputType=xml",
-// 			brand : "elcomercio"
-// 		},
-// 		{
-// 			url:"https://elcomercio.pe/arcio/rss/category/deporte-total/futbol-peruano/",
-// 			brand : "elcomercio"
-// 		},
-// 		{
-// 			url:"https://elcomercio.pe/arcio/rss/category/deporte-total/futbol-mundial/",
-// 			brand : "elcomercio"
-// 		},
-// 		{
-// 			url:"https://elcomercio.pe/arcio/rss/category/deporte-total/tenis/",
-// 			brand : "elcomercio"
-// 		},
-// 		{
-// 			url:"https://elcomercio.pe/arcio/rss/category/deporte-total/voley/",
-// 			brand : "elcomercio"
-// 		}
-// 	],
-// 	gastronomia : [
-// 		{
-// 			url:"https://elcomercio.pe/arcio/rss/category/gastronomia/chefs/",
-// 			brand : "elcomercio"
-// 		},
-// 		{
-// 			url:"https://elcomercio.pe/arcio/rss/category/gastronomia/recetas/",
-// 			brand : "elcomercio"
-// 		},
-// 		{
-// 			url:"https://elcomercio.pe/arcio/rss/category/gastronomia/nutricion/",
-// 			brand : "elcomercio"
-// 		},
-// 		{
-// 			url:"https://elcomercio.pe/arcio/rss/category/gastronomia/bares-y-copas/",
-// 			brand : "elcomercio"
-// 		},
-// 		{
-// 			url:"https://elcomercio.pe/arcio/rss/category/gastronomia/internacional/",
-// 			brand : "elcomercio"
-// 		}
-// 	]
-// };
+const urlMundo = {
+	mundo: [
+		{
+			url: "https://gestion.pe/arcio/rss/category/mundo/estados-unidos/",
+			brand: "gestion",
+		},
+		{
+			url: "https://gestion.pe/arcio/rss/category/mundo/espana/",
+			brand: "gestion",
+		},
+		{
+			url: "https://gestion.pe/arcio/rss/category/mundo/mexico/",
+			brand: "gestion",
+		},
+		{
+			url: "https://gestion.pe/arcio/rss/category/mundo/internacional/",
+			brand: "gestion",
+		},
+		{
+			url: "https://elcomercio.pe/arc/outboundfeeds/rss/category/mundo/?outputType=xml",
+			brand: "elcomercio",
+		},
+		{
+			url: "https://elcomercio.pe/arcio/rss/category/mundo/asia/",
+			brand: "elcomercio",
+		},
+		{
+			url: "https://elcomercio.pe/arcio/rss/category/mundo/desastres/",
+			brand: "elcomercio",
+		},
+		{
+			url: "https://elcomercio.pe/arcio/rss/category/mundo/eeuu/",
+			brand: "elcomercio",
+		},
+		{
+			url: "https://elcomercio.pe/arcio/rss/category/mundo/escandalos/",
+			brand: "elcomercio",
+		},
+		{
+			url: "https://elcomercio.pe/arcio/rss/category/mundo/europa/",
+			brand: "elcomercio",
+		},
+		{
+			url: "https://elcomercio.pe/arcio/rss/category/mundo/latinoamerica/",
+			brand: "elcomercio",
+		},
+		{
+			url: "https://elcomercio.pe/arcio/rss/category/mundo/mexico/",
+			brand: "elcomercio",
+		},
+		{
+			url: "https://elcomercio.pe/arcio/rss/category/mundo/norteamerica/",
+			brand: "elcomercio",
+		},
+		{
+			url: "https://elcomercio.pe/arcio/rss/category/mundo/onu/",
+			brand: "elcomercio",
+		},
+		{
+			url: "https://elcomercio.pe/arcio/rss/category/mundo/perfil/",
+			brand: "elcomercio",
+		},
+		{
+			url: "https://elcomercio.pe/arcio/rss/category/mundo/tragedia/",
+			brand: "elcomercio",
+		},
+		{
+			url: "https://elcomercio.pe/arcio/rss/category/mundo/africa/",
+			brand: "elcomercio",
+		},
+		{
+			url: "https://elcomercio.pe/arcio/rss/category/mundo/armamentismo/",
+			brand: "elcomercio",
+		},
+		{
+			url: "https://elcomercio.pe/arcio/rss/category/mundo/diplomacia/",
+			brand: "elcomercio",
+		},
+		{
+			url: "https://elcomercio.pe/arcio/rss/category/mundo/elecciones/",
+			brand: "elcomercio",
+		},
+		{
+			url: "https://elcomercio.pe/arcio/rss/category/mundo/espana/",
+			brand: "elcomercio",
+		},
+		{
+			url: "https://elcomercio.pe/arcio/rss/category/mundo/justicia/",
+			brand: "elcomercio",
+		},
+		{
+			url: "https://elcomercio.pe/arcio/rss/category/mundo/medio-ambiente/",
+			brand: "elcomercio",
+		},
+		{
+			url: "https://elcomercio.pe/arcio/rss/category/mundo/narcotrafico/",
+			brand: "elcomercio",
+		},
+		{
+			url: "https://elcomercio.pe/arcio/rss/category/mundo/narcotrafico/",
+			brand: "elcomercio",
+		},
+		{
+			url: "https://elcomercio.pe/arcio/rss/category/mundo/oea/",
+			brand: "elcomercio",
+		},
+		{
+			url: "https://elcomercio.pe/arcio/rss/category/mundo/oriente-medio/",
+			brand: "elcomercio",
+		},
+		{
+			url: "https://elcomercio.pe/arcio/rss/category/mundo/terrorismo/",
+			brand: "elcomercio",
+		},
+		{
+			url: "https://elcomercio.pe/arcio/rss/category/mundo/venezuela/",
+			brand: "elcomercio",
+		},
+		{
+			url: "https://elcomercio.pe/arcio/rss/category/mundo/centroamerica/",
+			brand: "elcomercio",
+		},
+	],
+};
+const urlBienestar = {
+	bienestar: [
+		{
+			url: "https://elcomercio.pe/arcio/rss/category/bienestar/alimentacion/",
+			brand: "elcomercio",
+		},
+		{
+			url: "https://elcomercio.pe/arcio/rss/category/artlima/espiritualidad/",
+			brand: "elcomercio",
+		},
+		{
+			url: "https://elcomercio.pe/arcio/rss/category/artlima/salud-fisica/",
+			brand: "elcomercio",
+		},
+		{
+			url: "https://elcomercio.pe/arcio/rss/category/artlima/crecimiento-personal/",
+			brand: "elcomercio",
+		},
+		{
+			url: "https://elcomercio.pe/arcio/rss/category/artlima/mente-sana/",
+			brand: "elcomercio",
+		},
+	],
+};
+const urlTendencias = {
+	tendencias: [
+		{
+			url: "https://gestion.pe/arcio/rss/category/tendencias/estilos/",
+			brand: "gestion",
+		},
+		{
+			url: "https://gestion.pe/arcio/rss/category/tendencias/lujos/",
+			brand: "gestion",
+		},
+		{
+			url: "https://gestion.pe/arcio/rss/category/tendencias/moda/",
+			brand: "gestion",
+		},
+		{
+			url: "https://gestion.pe/arcio/rss/category/tendencias/viajes/",
+			brand: "gestion",
+		},
+	],
+};
+const urlTecnologia = {
+	tecnologia: [
+		{
+			url: "https://gestion.pe/arc/outboundfeeds/rss/category/tecnologia/?outputType=xml",
+			brand: "gestion",
+		},
+		{
+			url: "https://elcomercio.pe/arcio/rss/category/tecnologia/gadgets/",
+			brand: "elcomercio",
+		},
+		{
+			url: "https://elcomercio.pe/arcio/rss/category/tecnologia/redes-sociales/",
+			brand: "elcomercio",
+		},
+		{
+			url: "https://elcomercio.pe/arcio/rss/category/tecnologia/robotica/",
+			brand: "elcomercio",
+		},
+		{
+			url: "https://elcomercio.pe/arcio/rss/category/tecnologia/",
+			brand: "elcomercio",
+		},
+		{
+			url: "https://elcomercio.pe/arcio/rss/category/tecnologia/videojuegos/",
+			brand: "elcomercio",
+		},
+		{
+			url: "https://elcomercio.pe/arcio/rss/category/tecnologia/streamers/",
+			brand: "elcomercio",
+		},
+	],
+};
+const urlDeporte = {
+	deporte: [
+		{
+			url: "https://gestion.pe/arcio/rss/category/mix/sports/",
+			brand: "gestion",
+		},
+		{
+			url: "https://elcomercio.pe/arcio/rss/category/trivias/deporte-total/",
+			brand: "elcomercio",
+		},
+		{
+			url: "https://elcomercio.pe/arcio/rss/category/videos/deportes/",
+			brand: "elcomercio",
+		},
+		{
+			url: "https://elcomercio.pe/arc/outboundfeeds/rss/category/deporte-total/?outputType=xml",
+			brand: "elcomercio",
+		},
+		{
+			url: "https://elcomercio.pe/arcio/rss/category/deporte-total/futbol-peruano/",
+			brand: "elcomercio",
+		},
+		{
+			url: "https://elcomercio.pe/arcio/rss/category/deporte-total/futbol-mundial/",
+			brand: "elcomercio",
+		},
+		{
+			url: "https://elcomercio.pe/arcio/rss/category/deporte-total/tenis/",
+			brand: "elcomercio",
+		},
+		{
+			url: "https://elcomercio.pe/arcio/rss/category/deporte-total/voley/",
+			brand: "elcomercio",
+		},
+	],
+};
+const urlGastronomia = {
+	gastronomia: [
+		{
+			url: "https://elcomercio.pe/arcio/rss/category/gastronomia/chefs/",
+			brand: "elcomercio",
+		},
+		{
+			url: "https://elcomercio.pe/arcio/rss/category/gastronomia/recetas/",
+			brand: "elcomercio",
+		},
+		{
+			url: "https://elcomercio.pe/arcio/rss/category/gastronomia/nutricion/",
+			brand: "elcomercio",
+		},
+		{
+			url: "https://elcomercio.pe/arcio/rss/category/gastronomia/bares-y-copas/",
+			brand: "elcomercio",
+		},
+		{
+			url: "https://elcomercio.pe/arcio/rss/category/gastronomia/internacional/",
+			brand: "elcomercio",
+		},
+	],
+};
 
 async function crons(url: { [key: string]: { url: string; brand: string }[] }) {
 	console.log("Running crons at", new Date().toISOString());
 	let items = [];
 	for (const key in url) {
 		for (const item of url[key as keyof typeof url]) {
+			console.log(`Parsing ${key} ${item.brand}...`)
 			items = await parse(item.url, key, item.brand);
 			await saveItems(items);
 		}
 	}
 }
 
-async function cronMapper(name:string, url: { [key: string]: { url: string; brand: string }[] }) {
+async function cronMapper(
+	name: string,
+	url: { [key: string]: { url: string; brand: string }[] },
+) {
 	return cron({
 		name,
 		pattern: Patterns.everyMinutes(30),
@@ -383,23 +397,27 @@ async function cronMapper(name:string, url: { [key: string]: { url: string; bran
 	});
 }
 
-
-
 const app = new Elysia()
-	.use( await cronMapper('economia', urlEconomia))
-	.use( await cronMapper('politica', urlPolitica))
-	// .use( cronMapper('economia', urlEconomia))
-	// .use( cronMapper('economia', urlEconomia))
-	// .use( cronMapper('economia', urlEconomia))
-	// .use( cronMapper('economia', urlEconomia))
-	.get('/getNews', async () => {
-		await cronMapper('economia', urlEconomia)
-		await cronMapper('politica', urlPolitica)
-		console.log("Running economia politica");
-		return { message: "running economia politica" };
+	.use(cronMapper("economia", urlEconomia))
+	.use(cronMapper("politica", urlPolitica))
+	.use(cronMapper("mundo", urlMundo))
+	.use(cronMapper("bienestar", urlBienestar))
+	.use(cronMapper("tendencias", urlTendencias))
+	.use(cronMapper("tecnologia", urlTecnologia))
+	.use(cronMapper("deporte", urlDeporte))
+	.use(cronMapper("gastronomia", urlGastronomia))
+	.get("/getNews", async () => {
+		await crons(urlEconomia)
+		await crons(urlPolitica)
+		await crons(urlMundo)
+		await crons(urlBienestar)
+		await crons(urlTendencias)
+		await crons(urlTecnologia)
+		await crons(urlDeporte)
+		await crons(urlGastronomia)
 	})
 	.listen(3000);
 
 console.log(
-  `🦊 Elysia is running at ${app.server?.hostname}:${app.server?.port}`
+	`🦊 Elysia is running at ${app.server?.hostname}:${app.server?.port}`,
 );
