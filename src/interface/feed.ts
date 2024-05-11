@@ -1,14 +1,25 @@
 export interface ComercioItem {
-	creator: string;
+	category:string;
+	brand: string;
 	title: string;
 	link: string;
-	pubDate: string;
-	contentEncoded: string;
-	dcCreator: string;
-	content: string;
-	contentSnippet: string;
 	guid: string;
+	dcCreator: string;
+	pubDate: string;
+	description: string;
+	contentEncoded: string;
 	isoDate: Date;
 }
-
+export interface GestionItem {
+	category:string;
+	brand: string;
+	title: string;
+	link: string;
+	guid: string;
+	dcCreator: string;
+	pubDate: string;
+	description: string;
+	contentEncoded: string;
+	isoDate: Date;
+}
   
