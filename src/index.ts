@@ -383,8 +383,8 @@ async function cronMapper(name:string, url: { [key: string]: { url: string; bran
 	});
 }
 const app = new Elysia()
-	.use( cronMapper('economia', urlEconomia))
-	.use( cronMapper('politica', urlPolitica))
+	.use( await cronMapper('economia', urlEconomia))
+	.use( await cronMapper('politica', urlPolitica))
 	// .use( cronMapper('economia', urlEconomia))
 	// .use( cronMapper('economia', urlEconomia))
 	// .use( cronMapper('economia', urlEconomia))
